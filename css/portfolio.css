@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+
+    --one-color: #DFF2EB;
+    --two-color: #B9E5E8;
+    --thre-color: #7AB2D3;
+    --four-color: #4A628A;
+    --text: #130a07;
+    --background: #fbf6f4;
+    --primary: #bc6349;
+    --secondary: #97d8b5;
+    --accent: #7dc1cf;
+    --main-font-family: "Source Code Pro", monospace;
+    --second-font-family:"Poppins", sans-serif;
+
+}
+body{
+    background: #C6E7FF;
+    overflow-x: hidden;
+}
+*{
+    font-family: var(--second-font-family);
+
+}
+.text-port-page{
+    width: 100%;
+    text-align: center;
+}
+.text-port-page h1{
+    font-family: var(--main-font-family);
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+}
+.content-portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    padding-left: 70px;
+    gap: 10px;
+    position: relative;
+    top: 30px;
+}
+.box-porfolio{
+    border: none;
+    width: 300px;
+    border-radius: 30px;
+    background: #FBFBFB;  
+}
+.img{
+    padding: 15px 15px 0 15px;
+}
+.img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.content-portfolio .text{
+    position: relative;
+    left: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+}
+.content-portfolio .about-portfolio{
+    letter-spacing: 1px;
+    padding: 10px;
+
+}
+.icon-portf{
+    border: none;
+    width: 82px;
+    background: var(--primary);
+    border-radius: 20px;
+    position: relative;
+    left: 10px;
+    margin: 10px;
+}
+.icon-portf img{
+    width: 20px;
+    position: relative;
+    top: 6px;
+    left: 4px;
+    
+}
+.links{
+    padding: 10px;
+    position: relative;
+    width: fit-content;
+    left: 10px;
+    transition: .5s;
+    
+}
+.links:hover{
+    text-decoration:2px underline blue;
+    scale: 1.1;
+}
+.links a{
+    font-size: 20px;
+    color: #130a07;
+    text-transform:capitalize;
+}
+.links i{
+    font-size: 20px;
+}
+@media(max-width:767px){
+    .content-portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+
+    }
+    .box-porfolio{
+        max-width: 250px;  
+    }
+}

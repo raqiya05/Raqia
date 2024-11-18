@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+:root {
+
+    --one-color: #d3ebe9;
+    --two-color: #B9E5E8;
+    --thre-color: #7AB2D3;
+    --four-color: #4A628A;
+    --text: #130a07;
+    --background: #fbf6f4;
+    --primary: #bc6349;
+    --secondary: #97d8b5;
+    --accent: #7dc1cf;
+    --main-font-family: "Source Code Pro", monospace;
+
+}
+body{
+    background: var(--one-color);
+}
+.content-contact{
+    display: flex;
+    justify-content: center;
+   position: relative;
+   top: 30px;
+}
+.contact-img{
+    max-width: 800px;
+}
+.contact-img img{
+    width: 100%;
+}
+
+
+textarea{
+    display: block;
+    width: 400px;
+    height: 226px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ebedee;
+    box-shadow:0 7px 10px rgb(0,0,0,0.1);
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+textarea::placeholder{
+    font-size: 20px;
+}
+textarea:focus{
+    outline: none;
+}
+form h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+form input{
+    display: block;
+    width: 400px;
+    height: 52.8px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #f2f6f8;
+    padding-left: 60px;
+    box-shadow: 0 7px 5px rgb(0,0,0,0.1);
+
+}
+
+input::placeholder{
+    padding-left: 0px;
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+}
+.input-1,.input-2{
+    position: relative;
+}
+.input-1 i,.input-2 i{
+    position: absolute;
+    left: 0;
+    bottom:10px;
+    font-size: 29px;
+    padding-left: 20px;
+}
+
+
+
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+    width: 220px;
+    padding: 0 49px;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--thre-color);
+    color: black;
+    box-shadow: 0 7px 10px rgb(0,0,0,0.1);
+    font-size: 16px;
+    transition: .3s;
+}
+button:hover{
+    box-shadow: 0 7px 5px rgb(0,0,0,0.2);
+    background: #7ab2d3c0;
+    scale: 1.1;
+
+
+}
+@media (max-width:425px){
+    form {
+        text-align: center;
+    }
+    form input{
+        max-width: 250px;
+    }
+    
+    .contact-img{
+        display: none;
+    }
+    textarea{
+        max-width: 250px;
+    }
+}
+@media (max-width:767px){
+    .contact-img{
+        display: none;
+    }
+    .content-contact{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
